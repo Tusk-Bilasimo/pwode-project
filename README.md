@@ -48,8 +48,10 @@ PWODE's success is based on the discovery of the **PNT-Inspired Echo Function**,
 ## Getting Started
 
 ### Accessing the Code
-The core validated code for the 1D spectral analysis is located in:
-[./code/PWODE_V9.3_Spectral/]
+The core validated code for the 1D spectral analysis and the Phonon density of states for Si is located in:
+- https://github.com/Tusk-Bilasimo/pwode-project/blob/main/pwode_spectral_v9.3.py
+- https://github.com/Tusk-Bilasimo/pwode-project/blob/main/si_vdos.csv
+- Phonon density of states for Si, source page: https://lampz.tugraz.at/~hadley/ss1/phonons/dos/si_phonon_dos.html
 
 ### Project History and Legacy
 The falsified 2D code and analysis files are stored for full transparency in:
