@@ -1,7 +1,12 @@
-# pwode_spectral_v9.3_final_restored_validation.py
-# FIX: Implements the crucial two-phase 'Expanding Wave' tuning concept (self-calibration)
-# to dynamically determine the optimal noise floor scale factor for the QCS, addressing
-# material-specific inconsistencies.
+﻿"""
+Author: Adrian Sutton
+Date: 2025-10-29
+Version: 9.3 (Full Pipeline)
+pwode_spectral_v9.3_final_restored_validation.py
+FIX: Implements the crucial two-phase 'Expanding Wave' tuning concept (self-calibration)
+to dynamically determine the optimal noise floor scale factor for the QCS, addressing
+material-specific inconsistencies.
+"""
 
 import numpy as np
 import math
