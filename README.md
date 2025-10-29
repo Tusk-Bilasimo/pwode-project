@@ -20,7 +20,7 @@ PWODE successfully completed a **Path C Pivot** following the falsification of i
 The original attempt to apply PWODE to dense 2D images was **falsified** (V.8, 3.9% precision). This negative result was critical, forcing a necessary scientific pivot to the 1D domain where the mathematical constraints were met.
 
 ➡️ **For full details on the failure and the strategic pivot, please read:**
-[./docs/Falsification_Report_2D.md]
+- https://github.com/Tusk-Bilasimo/pwode-project/blob/main/docs/Falsification_Report_2D.md
 
 ---
 
@@ -53,7 +53,8 @@ The core validated code for the 1D spectral analysis is located in:
 
 ### Project History and Legacy
 The falsified 2D code and analysis files are stored for full transparency in:
-[./code/Legacy_2D_V8/]
+- https://github.com/Tusk-Bilasimo/pwode-project/blob/main/pwode_v8-3.py
+- https://github.com/Tusk-Bilasimo/pwode-project/blob/main/benchmark_fast-sift.py
 
 ### Contact
 For collaboration, inquiries, or to submit external raw data:
