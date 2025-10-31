@@ -1,3 +1,12 @@
+"""
+Author: Adrian Sutton
+Date: 2025-10-30
+Version: 9.4 (Full Pipeline)
+pwode_spectral_v9.4_final_restored_validation.py
+validation on the Electronic Density of States (EDOS) 
+for Diamond and Germanium (Group IV-A semiconductors).
+"""
+
 import numpy as np
 import pandas as pd
 from scipy import signal
