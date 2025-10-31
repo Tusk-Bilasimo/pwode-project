@@ -20,17 +20,6 @@ The tool identifies **PNT Coherence (%)**— the percentage of relevant spectral
 
 The analysis relies on the final, optimized configuration: **Modulus 30** and the **PNT-inspired echo function** (`stdotlin(1)`).
 
-### Repository Structure (V9.4)
-
-pwode-project/
-├── pwode_spectral_v9_4.py # The final analysis script
-├── requirements.txt # All dependencies (Pandas, SciPy, mp-api)
-├── README.md
-└── data/
-├── mp-66_dos.txt # Diamond E-DOS
-├── mp-149_dos.txt # Germanium E-DOS
-└── si_vdos.csv # Silicon VDOS (Initial Proof)
-
 ### Setup and Execution
 To replicate the final report's results, clone the repository and run the main script.
 
