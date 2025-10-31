@@ -91,7 +91,7 @@ This work advances the understanding of computational heuristics in physics, dem
 
 ### Future Work and Outreach
 
-- **Validation:** Conduct further tests on raw VDOS data (e.g., from Dr. Verona) and explore applications to NMR and Mass Spectrometry spectra.
+- **Validation:** Conduct further tests on raw VDOS data and explore applications to NMR and Mass Spectrometry spectra.
 - **Extension:** Explore the non-linear structure of \(E_g\) by comparing PWODE against the Group III-V and II-VI semiconductors.
 
 **Contact:** adrian@pwt.life  
