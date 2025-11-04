@@ -1,39 +1,62 @@
-# PWODE-Spectral: The PNT Coherence Engine (V9.4 Final)
+# ⚛️ PWODE Project: Prime-Wave Orbit Density Engineering
 
-## Project Conclusion: PNT Coherence is Validated
+The PWODE project develops unconventional computational tools for **quantum spectral analysis** by leveraging principles from **Prime Number Theory (PNT)**. Our goal is to provide superior spectral sparsification, noise reduction, and automated feature detection in electronic density of states (E-DOS) and band structure calculations.
 
-The **Prime Wave Order-Detection Engine (PWODE)** successfully transitioned from a failed 2D image heuristic to a highly specialized **Quantum Spectral Analyzer**. This repository contains the validated tool and data proving the core hypothesis: the arithmetic structure of the **Prime Number Theorem (PNT)** aligns with physical quantization in diamond-structure semiconductors.
+The **Prime Resonance** phenomenon utilizes the mathematical structure inherent in prime distribution to efficiently model the complex, non-linear patterns found in quantum spectra, drastically improving computational efficiency and prediction purity compared to traditional methods.
 
-The tool identifies **PNT Coherence (%)**— the percentage of relevant spectral peaks that are validated as coherent by the PNT-inspired echo function.
+## 🚀 PWODE V10.0: The Spectral Tuner (Current Release)
 
-### Validation Summary (E-DOS & VDOS)
+The V10.0 release is a major architectural upgrade that introduces **dynamic material tuning**, solving the primary limitation of previous versions. The core of this version is the **Material Parameter Manager**, which automatically selects the optimal coherence threshold ($\\text{QCS}_{\\text{min}}$) for each material class, moving PWODE from a specialized filter to a **universal, tunable spectral engine.**
 
-| Element               | Data Type | Validated Peaks (N) | PNT Coherence (%) | Key Finding |
-|-----------------------|-----------|---------------------|-------------------|-------------|
-| Diamond (mp-66)       | E-DOS     | 2.0 ± 0.0           | 50.0 ± 0.0        | Confirmed: Coherence targets the $E_g$ Band Gap edges (VBM/CBM). |
-| Germanium (mp-149)    | E-DOS     | 3.0 ± 0.0           | 50.0 ± 0.0        | Confirmed: Generalizability across Group IV-A semiconductors. |
-| Silicon (tsl_vdos)    | VDOS      | ~21 peaks           | ~21.4             | Confirmed alignment with known Phonon Modes. |
+### Breakthrough: Tunability and Coherence
 
----
+Our validation demonstrated that the coherence strength varies with bonding type. V10.0 automatically adapts to these empirical observations:
 
-## Reproducibility and Setup
+| Material Class | Bonding Type | QCSₘᵢₙ Threshold | V10.0 Status |
+|---|---|---|---|
+| **Covalent** | Si, Diamond, GaN | 0.60 | **OPTIMAL:** Strong Coherence required. |
+| **Layered** | MoS₂ | 0.40 | **TUNED:** Lower coherence threshold needed. |
+| **Ionic/Wide-Gap** | KCl | 0.25 | **TUNED:** Highly relaxed threshold for weak coherence. |
+| **Metallic/Gapless** | Cu, Bi₂Te₃ | 0.01 | **VALIDATION:** Rejects noisy, gapless systems by default. |
 
-The analysis relies on the final, optimized configuration: **Modulus 30** and the **PNT-inspired echo function** (`stdotlin(1)`).
 
-### Setup and Execution
-To replicate the final report's results, clone the repository and run the main script.
+## 🛠️ Getting Started
 
-# Clone the repository
-git clone [https://github.com/Tusk-Bilasimo/pwode-project.git](https://github.com/Tusk-Bilasimo/pwode-project.git)
-cd pwode-project
+### 1\. Requirements
 
-# Setup environment and install dependencies
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+-   Python (3.8+)
+    
+-   Standard scientific libraries: `numpy`, `pandas`, `scipy`, `pathlib`.
+    
+-   Materials Project API Key: Required for the included download utility (`e-dos_download_v10.py`).
+    
 
-# Run the full validation suite (Diamond and Germanium E-DOS)
-python pwode_spectral_v9_4.py 
-The output tables will replicate the figures used in the final Capstone Report V.9.4.
-3. Core Theoretical Discovery
-The research found that PWODE is a $\mathbf{\text{superior precision filter}}$, actively rejecting $50\%$ to $60\%$ of spurious spectral signals that pass standard peak-finding thresholds, proving its value in scenarios where high-fidelity, sparse peak detection is mandatory.
+### 2\. File Structure
+
+```
+pwode-project/
+```
+
+### 3\. Usage: Running the Spectral Tuner
+
+The core logic resides in `pwode_v10_spectral_tuner.py`. This single script performs the end-to-end analysis using the dynamically loaded parameters.
+
+1.  **Prepare Data:** Ensure all necessary DOS files (available in the `/data` folder) are downloaded. We recommend using the provided `e_dos_download_v10.py` script.
+    
+2.  **Execute the Tuner:** Run the main analysis pipeline. The script automatically iterates through all files in the `/data` directory, fetching the correct $\\text{QCS}$ threshold for each one.
+    
+
+```
+python pwode_v10_spectral_tuner.py
+```
+
+The output will be a comprehensive report table showing the dramatic **peak reduction** achieved by PWODE V10.0 compared to baseline methods ($\\text{SCIPY/SAVGOL}$), confirming the efficiency of the Prime Resonance approach on a material-by-material basis.
+
+## 📚 Theory and Documentation
+
+For a detailed technical breakdown of the $\\text{Modulus}=30$ wheel factorization, the $i \\cdot \\ln(i)$ echo function, and the derivation of the material-specific $\\text{QCS}$ values, please consult the official documentation:
+
+-   **[PWODE V10.0 Technical Documentation](https://github.com/Tusk-Bilasimo/pwode-project/blob/main/docs/PWODE-SPECTRAL%20V.10.0.md)**
+    
+
+**We are not claiming primes are "fundamental" to quantum mechanics; we have demonstrated that prime number theory provides superior computational tools for quantum spectral analysis.**
